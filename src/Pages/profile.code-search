@@ -1,0 +1,33 @@
+# Query: profile
+# ContextLines: 1
+
+8 results - 3 files
+
+src\App.jsx:
+   5  import Signup from "./Pages/Signup";
+   6: import Profile from "./Pages/Profile";
+   7  import Navbar from "./Components/Navbar";
+
+  20            <Route
+  21:             path="/Profile"
+  22              element={
+  23                <ProtectedRoute>
+  24:                 <Profile />
+  25                </ProtectedRoute>
+
+src\Components\Navbar.jsx:
+  33              <button type="button" className="captalize pr-4 text-white">
+  34:               Profile
+  35              </button>
+
+src\Pages\Profile.jsx:
+   9  import { arrayRemove, doc, onSnapshot, updateDoc } from "firebase/firestore";
+  10: const Profile = () => {
+  11    const [movies, setMovies] = useState([]);
+
+  21  
+  22:   return <div>Profile</div>;
+  23  };
+  24  
+  25: export default Profile;
+  26  
