@@ -28,7 +28,9 @@ function Profile() {
   };
 
   const handleUnlikeShow = async (movie) => {
-    const UserDoc = doc(db, "User", user.email);
+    const UserDoc = doc(db, "users", user.email);
+
+    console.log(UserDoc);
 
     await updateDoc(UserDoc, {
       favShows: arrayRemove(movie),
