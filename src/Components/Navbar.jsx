@@ -29,7 +29,7 @@ const Navbar = () => {
 
       {user?. email ? (
         <div>
-          <Link to="/">
+          <Link to="/Profile">
             <button type="button" className="captalize pr-4 text-white">
               Profile
             </button>

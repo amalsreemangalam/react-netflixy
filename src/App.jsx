@@ -8,6 +8,7 @@ import Navbar from "./Components/Navbar";
 import { AuthContextprovider } from "./context/AuthContext";
 import ProtectedRoute from "./Components/ProtectedRoute";
 
+
 const App = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+        
           <Route
             path="/Profile"
             element={
